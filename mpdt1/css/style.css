@@ -1,0 +1,1642 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'tendernessregular';
+    src: url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.eot');
+    src: url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.woff2') format('woff2'),
+         url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.woff') format('woff'),
+         url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.ttf') format('truetype'),
+         url('http://www.seaclubaquapark.com/scap/css/fonts/tenderness-webfont.svg#tendernessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),  url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Bold.otf')  format('opentype'),
+	     url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Bold.woff') format('woff'), url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Bold.ttf')  format('truetype'), url('/scap/css/fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Regular.otf')  format('opentype'),
+	     url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Regular.woff') format('woff'), url('http://www.seaclubaquapark.com/scap/css/fonts/MyriadPro-Regular.ttf')  format('truetype'), url('/scap/css/fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	margin: 0 auto;
+}
+
+.top{
+	background: linear-gradient(#f37600, #c05d00);
+	background-repeat: no-repeat;
+	height: 38px;
+	margin: 0 auto;
+}
+
+.container{
+margin: 0px auto;
+width: 1060px;
+}
+
+.slick-next{
+	right: 45% !important;
+}
+
+.slick-prev{
+	left: 45% !important;
+}
+
+.slick-prev, .slick-next{
+	top:108% !important;
+	width: 33px !important;
+	height: 31px !important;
+}
+.blue-line{
+		background: rgba(0, 0, 0, 0) linear-gradient(#071228, #00045d) no-repeat scroll 0 0;
+    height: 30px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 102px;
+    z-index: 9999;
+    display:none;
+}
+
+.white-bg{
+	 	background: rgba(0, 0, 0, 0) linear-gradient(#071228, #00045d) no-repeat scroll 0 0;
+    height: 64px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    stop: 132px;
+    top: 0px;
+    z-index: 9999;}
+
+.blue-line p{
+	color: #FFFFFF;
+	margin: 0;
+	padding: 6px 0 7px 0;
+	float: left;
+	font-family: 'Arial';
+	font-size: 15px;
+}
+
+.options{
+	float: right !important;
+	color: #FFFFFF;
+	background: linear-gradient(#5972a2, #44577d);
+	font-family: 'Arial';
+	font-size: 15px;
+	padding: 4px 25px 9px 25px !important;
+}
+
+.header{
+	width: 754px;
+}
+
+.logo{
+	width: 200px;	
+	z-index: 999;
+	position: absolute;
+	left:50px;
+	height: 150px;}
+.logo a {
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    display: block;
+}
+.logo img{
+	box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.4);
+	width:200px;
+	height:auto !important;
+}
+
+#booking_tab { background-image:url('http://www.seaclubaquapark.com/scap/images/bookingbg.svg');background-position:center bottom;background-size:100% 100%;width:120px!important;height:62px;position:absolute!important;top:0px;right:50px;color:#a78b49!important;opacity:1}
+#booking_tab  { color:#003366!important;padding-top:19px;font-weight:300;display:inline-block; font-family: 'tendernessregular'; font-size: 20px; width:120px;text-align:center;}
+#booking_tab a:hover {background:transparent!important;text-decoration:underline;}
+#booking_tab:hover a {background:transparent!important;}
+.popwindow {width:800px;height:570px;background:#fff;border-radius:10px;border:10px solid rgba(255,255,255,0.5);margin:70px auto;position:relative;}
+.popwindow h2{
+	font-family: 'tendernessregular';
+	text-align:center;
+	font-size: 36px;
+	padding: 0px;
+	margin:20px 0px 0px 0px;;
+}
+.popwindow .menu a {padding:5px 10px;background-color:#FFE4BC;border-radius:7px;color:#000;font-family: 'tendernessregular'; font-size: 17px;display:inline-block;margin:5px 10px;text-decoration:none;}
+.popbody {margin:0px 30px; height:510px;overflow-y:scroll;}
+nav{
+	float: left;
+	margin:7px 0px 0px 140px;
+	width: 800px;
+/*height: 173px;*/}
+
+ul.menu{
+/*	margin-top: 39px;*/
+}
+
+ul.menu li{
+	list-style: none;
+	display: inline-block;
+	font-family: 'tendernessregular';
+	font-size: 20px;
+	padding: 0 0 0 16px;
+}
+
+ul.menu a{
+	text-decoration: none;
+	/*color: #49669c;*/
+	color:#fff;
+}
+
+.seach {
+    margin: 0;
+    float: right;
+    text-align: right;
+    padding: 10px 0;
+}
+
+
+   /*   Slider css   */
+#wowslider-container1 .ws-title{
+	bottom: unset !important;
+	left: unset !important;
+	top: 0px !important;
+	right: 0px;
+	width: 368px;
+	text-transform: none !important;
+	border-radius: unset !important;
+	opacity: 0.7 !important;
+	padding-top:70px!important;
+}
+
+#wowslider-container1 .ws-title h4{
+	color: #000f7c;
+	font-family: 'tendernessregular';
+	font-size: 30px;
+	margin: 0px 30px 30px 30px;
+	text-align:center;
+}
+.contactus_body h1 {font-size:30px; font-family: 'tendernessregular'; }
+footer {position:relative;}
+.footer-text { color:#fff; position:absolute; bottom:0px;width:100%;border:0px solid #f00;padding:15px 0px;height:40px;background-color:#EC6505;}
+.footer-text .contactus_btn { color:#fff; float:right; margin:0px 200px 0px 0px; }
+.footer-text .contactus_btn  img{ vertical-align:middle;}
+.footer-text p { color:#fff; float:left;margin:10px 0px 0px 100px;font-size:11pt;}
+.footer-text img.seagroup {top:-120px;position:absolute;left:-80px;;}
+.footer-text .contactus_btn:before { color:#fff; content: 'Contact us'; display:inline; margin:0px 10px;font-size:11pt;}
+
+#wowslider-container1 .ws-title p img {margin:0px auto 20px auto;;display:block;text-align:center;}
+#wowslider-container1 .ws-title p{
+	color: #000f7c;
+	font-family: 'MyriadPro-Regular';
+	font-size: 16px;
+	line-height:30px;
+	text-align:justify;
+	margin:30px;
+}
+   /*   Slider css   */
+
+.container2{
+	width: 1000px;
+	margin: 0 auto;
+}
+.container2 .ui-tabs .ui-tabs-nav {margin:0px auto!important;text-align:center;}
+.page2{
+	background-size:cover;
+	height: 790px;
+	position:relative;
+}
+
+.page2 h1{
+	margin: 0px 0px 40px 0px;
+	color: #000F7C;
+	font-size: 62px;
+	text-align: center;
+	font-family: 'tendernessregular';
+}
+.white .images {display:none;}
+.white{
+    background-color: rgb(255, 255, 255);
+    width: 565px;
+    padding: 19px 45px 0px;
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.page2 h4{
+	font-size: 20px;
+	color: #000f7c;
+
+}
+
+.page2 p{
+	font-size: 15px;
+	color: #000f7c;
+	width: 553px;
+	text-align:justify;
+}
+
+
+.page2-text{
+	float: left;
+}
+
+.page2-text h4 { font-family: 'tendernessregular';font-size:38px; margin:30px 0px;}
+.page2-text p  { font-family: 'tendernessregular';font-size:20px;line-height:26px; }
+.images {margin-top:25px!important; float: right; width: 247px; }
+
+.images > img {
+    padding-bottom: 19px;
+}
+
+.page2-icon{
+margin: 27px -225px 0px auto;
+width: 450px;
+position: absolute;
+bottom: 150px;
+right: 50%;
+}
+
+.page2-icon > a{
+	padding-right: 15px;
+	float:left;
+}
+
+.room-suites{
+	background-image: url("http://www.hohusa.net/GAX_folder/InsidePlantView/Inside04.jpg");
+	background-size:cover;
+	height: 873px;
+}
+
+.room-suites h1{
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 62px;
+	text-align: center;
+	font-family: 'tendernessregular';
+	padding-top: 69px;
+}
+.tooltip {
+    display:none;
+    background: black;
+    font-size:12px;
+    height:10px;
+    width:80px;
+    padding:10px;
+    color:#fff; 
+    z-index: 99;
+    bottom: 10px;
+    border: 2px solid white;
+/* for IE */
+  filter:alpha(opacity=80);
+  /* CSS3 standard */
+  opacity:0.8;
+}
+
+.ui-tooltip{padding:8px;position:absolute;z-index:9999;max-width:300px;-webkit-box-shadow:0 0 5px #aaa;box-shadow:0 0 5px #aaa;background:rgba(255,255,255,0.8);}
+body .ui-tooltip{border-width:2px}
+.room-suites .container2 > p {color:#fff;}
+.room-suites .duoroom p { color:#000!important;}
+.room-suites p{
+	color: #000;
+	font-family: 'tendernessregular';
+	font-size: 25px;
+	text-align: center;
+	margin: 5px 0 21px 0;
+	
+}
+
+.box{
+	background:#fff;;
+	border-radius:5px;
+	padding: 16px;
+	width: 374px !important;
+	height: 479px !important;
+}
+
+
+
+.box h3{
+	color: #4a525d;
+	font-family: 'tendernessregular';
+	font-size: 30px;
+	text-align: center;
+	margin: 18px 0 0 0;
+}
+
+.box > p{
+	color: #4a525d;
+	font-family: Arial;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
+	padding:0px 20px;
+}
+
+.box2{
+	background:#fff;;
+	border-radius:5px;
+    padding: 16px;
+    width: 374px !important;
+	height: 479px !important;
+}
+
+.separtor{ width:60px; float:left;}
+
+.box2 h3{
+	color: #4a525d;
+	font-family: 'tendernessregular';
+	font-size: 30px;
+	text-align: center;
+	margin: 18px 0 0 0;
+	width: 355px;
+}
+
+.mfp-arrow-left { left: 100px!important; }
+.mfp-arrow-right { right: 100px!important; }
+.mfp-bg {z-index:99999;}
+.mfp-wrap {z-index:999999;}
+.box2 p{
+	color: #000;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 18px;
+	width: 355px;
+}
+
+
+.icon-box{
+	border: 10px solid #fff;
+	background-color: #FFFFFF;
+	background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon.jpg");
+	background-repeat: no-repeat;
+	width: 33px;
+	height:33px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	position: absolute;
+	top: 87px;
+	cursor: pointer;
+	right: 0px;
+}
+
+.icon-box p{
+	color: #000000;
+	margin: 3px 0 0 45px;
+}
+
+.icon-box2{
+	border: 9px solid #fff;
+	background-color: #FFFFFF;
+	background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 159px;
+	cursor: pointer;
+	width: 36px;
+	height:33px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	right: 0px;
+}
+
+.icon-box2 p{
+	color: #000000;
+	margin: 3px 0 0 45px;
+}
+
+.icon-box3{
+	border: 9px solid #fff;
+	background-color: #FFFFFF;
+	background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon3.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 230px;
+	cursor: pointer;
+	width: 36px;
+	height:33px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	right: 0px;
+}
+
+.icon-box3 p{
+	color: #000000;
+	margin: 3px 0 0 45px;
+}
+
+.icon-box4{
+	border: 9px solid #fff;
+	background-color: #FFFFFF;
+	background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon4.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 300px;
+	cursor: pointer;
+	width: 36px;
+	height:37px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	right:0px
+}
+
+.icon-box4 p{
+	color: #000000;
+	margin: 6px 0 0 45px;
+}
+
+.icon-box:hover{
+	width: 140px !important;
+	right: 0px !important;
+	position: absolute;
+}
+
+.icon-box2:hover{
+	width: 140px;
+	right: 0px;
+	position: absolut;
+}
+
+.icon-box3:hover{
+	width: 140px;
+	right: 0px;
+	position: absolut;
+}
+
+.icon-box4:hover{
+	width: 140px;
+	right: 0px;
+	position: absolut;
+}
+
+.sside-icons-right{
+	float: right;
+	position: relative;
+	right: 31px;
+}
+
+.icon-box-right{
+	background-color: #fff;
+    background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon.jpg");
+    background-repeat: no-repeat;
+	background-position: right center;
+    border: 10px solid #fff;
+    cursor: pointer;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 87px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+    width: 36px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.icon-box-right p{
+    color: hsl(0, 0%, 0%);
+    margin: 0 0 0 0px;
+    position: absolute;
+    right: 45px;
+}
+
+.icon-box-right p:before{
+	content: attr(p);
+}
+
+.icon-box-right2{
+	background-color: hsl(0, 0%, 100%);
+    background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon2.png");
+    background-repeat: no-repeat;
+	background-position: right center;
+    border: 10px solid #fff;
+    cursor: pointer;
+    height: 33px;
+    position: absolute;
+    left: 0;
+    top: 159px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+    width: 36px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.icon-box-right2 p{
+    color: hsl(0, 0%, 0%);
+    margin: 0 0 0 0px;
+    position: absolute;
+    right: 62px;
+}
+
+.icon-box-right2 p:before{
+	content: attr(p);
+}
+
+.icon-box-right3{
+	background-color: #fff;
+    background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon3.png");
+    background-repeat: no-repeat;
+	background-position: right center;
+    border: 10px solid #fff;
+    cursor: pointer;
+    height: 33px;
+    position: absolute;
+    left: 0;
+    top: 230px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+    width: 36px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.icon-box-right3 p{
+    color: hsl(0, 0%, 0%);
+    margin: 0 0 0 0px;
+    position: absolute;
+    right: 45px;
+}
+
+.icon-box-right3 p::before {
+    content: attr(p);
+}
+
+.icon-box-right4{
+	background-color: #fff;
+    background-image: url("http://www.seaclubaquapark.com/scap/images/room-icon4.png");
+    background-repeat: no-repeat;
+	background-position: right center;
+    border: 10px solid #fff;
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+    width: 36px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.icon-box-right4 p {
+    color: hsl(0, 0%, 0%);
+    margin: 0 0 0 0px;
+    position: absolute;
+    right: 35px;
+}
+
+.icon-box-right4 p::before {
+    content: attr(p);
+}
+
+.icon-box-right:hover{
+	width: 140px !important;
+	left: 0px !important;
+	position: absolute;
+}
+
+.icon-box-right2:hover{
+	width: 140px !important;
+	left: 0px !important;
+	position: absolute;
+}
+
+.icon-box-right3:hover{
+	width: 140px !important;
+	left: 0px !important;
+	position: absolute;
+}
+
+.icon-box-right4:hover{
+	width: 140px !important;
+	left: 0px !important;
+	position: absolute;
+}
+
+.box img{
+	margin-right: 0px;
+}
+
+
+.lazy .slick-next::before{
+	content: "" !important;
+}
+
+.lazy .slick-prev::before{
+	content: "" !important;
+}
+
+.next-previous{
+	margin: 0px auto 0;
+	width: 110px;
+	clear: both;
+}
+
+.reload {
+    left: 16px;
+    margin: 0;
+    position: relative;
+    top: -87px;
+    width: 175px;
+}
+.readdown {width:240px;margin:10px auto;display:inline-block;text-align:center;border:0px solid #ddd;position:absolute;
+	font-family: 'tendernessregular'!important;
+	font-size: 12pt!important;
+	color:#888;
+	text-decoration:none;
+	bottom:10px;
+}
+.readdown:after { content:'\25BE';display:block;margin-left:-10px;left:50%;width:20px;position:absolute;bottom:-15px;}
+.diningbox {height:360px!important;overflow:hidden;}
+.diningbox .diningdesc {padding:10px 0px;}
+.diningbox .diningdesc *,.diningbox .diningdesc  {
+	font-family: 'tendernessregular'!important;
+	font-size: 16px!important;
+	text-justify:distribute;;
+	text-align:justify;
+	color:#555;
+} 
+.reasonbox .reasondesc {padding:0px 20px;}
+.reasonbox .reasondesc * {
+	font-family: 'tendernessregular'!important;
+	font-size: 16px!important;
+} 
+.dining-bar{
+	background-image: url("http://www.seaclubaquapark.com/scap/images/dining-bar.jpg");
+	background-size:cover;
+	height:792px;
+	position:relative;
+}
+.dining-bar .slick-slider {height:450px!important;}
+/*#gallery_1 .close{
+	top:14% !important;}*/
+
+
+.container3{
+	margin: 0 auto;
+	width: 1109px;
+}
+
+.dining-bar h1{
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 62px;
+	text-align: center;
+	font-family: 'tendernessregular';
+	padding-top: 69px;
+}
+
+.dining-bar p{
+	color: #FFFFFF;
+	font-family: 'tendernessregular';
+	font-size: 25px;
+	text-align: center;
+	margin: 20px 0 21px 0;
+}
+
+.dining-icon{
+	margin: 17px auto 0;
+	width: 280px;
+}
+
+.dining-icon img{
+	margin-right: 25px;
+	cursor: pointer;
+}
+
+.boxes {
+    margin-right: 11px;
+	border: 13px solid #FFFFFF;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+	width: 242px !important;
+	sheight: 100% !important;
+	smin-height: 350px !important;
+	float: left;
+}    
+.boxes h4{
+	color: #4a525d;
+    font-family: "tendernessregular";
+    font-size: 24px;
+    margin: 18px 0 0;
+    text-align: center;
+}
+
+.boxes p{
+	color: #4a525d;
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 18px;
+	margin-bottom: 4px;
+    text-align: justify;
+}
+ 
+.spa-health{
+	background-image: url("http://www.seaclubaquapark.com/scap/images/spa.jpg");
+	background-size:cover;
+	height: 755px;
+}
+
+.spa-health h1{
+	margin: 0;
+	color: #fff;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 1px;
+	font-size: 62px;
+	text-align: center;
+	font-family: 'tendernessregular';
+	padding-top: 69px;
+}
+
+.spa-health p{
+	color: #fff;
+	text-shadow:rgba(0,0,0,0.9) 1px 1px 1px;
+	font-family: 'tendernessregular';
+	font-size: 25px;
+	line-height:24pt;
+	text-align: center;
+	margin: 5px 0px 0px 0px;
+	padding-top:9px;
+}
+
+div.round-box{padding-top:56px;}
+
+.reasont{
+	background-image: url("http://www.seaclubaquapark.com/scap/images/reasont.jpg");
+	height: 790px;
+}
+
+.reasont h1{
+	margin: 0;
+	color: #000f7c;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'MyriadPro-Bold';
+	padding-top: 29px;
+}
+
+#tab{
+	margin: 32px auto 0;
+	width: 81%;
+}
+
+#tab img {
+    padding-right: 35px;
+}
+
+#tab img:last-child {
+    padding-right: 0px;
+}
+
+ul.ui-tabs-nav{
+	margin: 16px auto;
+}
+
+#tabs ul li {float:none!important;}
+.reasons_items.ui-corner-bottom {border:0px!important;}
+.reasons_items.ui-widget-content {background:none!important;}
+.reasons_items {margin-top:25px;min-height:400px;}
+ul.ui-tabs-nav li {
+	display: inline-block;
+	padding-right: 35px;
+	float:none!important;
+}
+
+ul.ui-tabs-nav li:last-child {
+    display: inline-block;
+	padding-right: 0px;
+}
+
+#a {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+
+#b {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+
+#c {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+
+#d {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+
+#e {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+#f {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+#g {
+	float: left;
+	padding: 22px 0;
+	width: 100%;
+}
+
+.box1:last-child {
+    margin-right: 0px;
+}
+
+.box1{
+    margin-left: 25px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	float: left !important;
+	padding: 15px;
+	width:248px !important;
+	min-height: 387px !important;
+	height:100%;
+}
+
+.box1 h4{
+	color: #000f7c;
+    font-family: "tendernessregular";
+    font-size: 27px;
+    margin: 18px 0 0;
+    text-align: center;
+}
+
+.box1 p{
+	color: #000f7c;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 18px;
+    text-align: center;
+	margin-bottom: 0px;
+}
+
+
+.borders{
+	border-bottom: 1px dashed #FFFFFF;
+	
+}
+
+footer{
+	margin: 0 auto;
+	width: 100%;
+	background-color: #01568C;
+}
+
+.booknow{
+}
+
+footer h4{
+	font-family: 'MyriadPro-Bold';
+	font-size: 21px;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+}
+
+.top-header{
+		background-attachment: fixed;
+    background-color: #01568c;
+    height: 112px;
+    margin: 0 auto;
+    position: fixed;
+    top: -90px;
+    width: 100%;
+    min-width:1280px;
+    z-index: 999;
+		-webkit-transition: all 0.5s ease 0s;
+		transition: all 0.5s ease 0s;
+}
+
+.heading{
+	float: left;
+	width: 216px;
+}
+
+.radio{
+	float: left;
+	width: 222px;
+	font-family: 'MyriadPro-Bold';
+	font-size: 19px;
+	color: #FFFFFF;
+	margin: 0;
+	letter-spacing: 0.8px;
+	padding-top: 10px;
+	margin-left: 30px;
+}
+
+
+div.main_form{   width: 903px; height: 82px; margin: 20px 0px 0px 250px;	}
+
+div.main_footer{
+width:100%;
+height:294px; 
+background:url(http://www.seaclubaquapark.com/scap/images/footer_main_bg.jpg) repeat-x;
+
+}
+
+.news-subscribe{
+	margin-bottom: 27px;
+}
+
+.news-subscribe > h4 {
+    margin-top: 0;
+    padding-top: 36px;
+    font-family: "tendernessregular";
+    font-size: 27px;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 43px;
+	margin-bottom: 0px;
+}
+
+.subscribe{
+	float: left;
+	margin-top: 27px;
+    font-family: "tendernessregular";
+    font-size: 18px;
+width:583px;}
+
+.mail-field{
+	padding:12px 10px 12px 20px;
+	color: #49669c;
+	width:440px;
+}
+
+.subscribe img.send-button{
+	float: right;
+	margin-left: 35px;
+}
+
+.footer-icon{
+margin-top: 56px;
+margin-bottom: 35px;
+margin-left: 381px;}
+
+.footer-icon img {
+    margin-right: 7px;
+}
+
+.ul-main{
+	margin-bottom: 50px;
+}
+
+ul.list{
+	padding: 0px;
+	float: left;
+}
+
+ul.list li{
+	list-style-image: url("http://www.seaclubaquapark.com/scap/images/arow.png");
+    font-family: "tendernessregular";
+    font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+ul.list li a{
+	color: #49669c;
+	text-decoration: none;
+}
+
+ul.list2{
+	float: left;
+	padding-left: 200px;
+}
+
+ul.list2 li{
+	list-style-image: url("http://www.seaclubaquapark.com/scap/images/arow.png");
+    font-family: "tendernessregular";
+    font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+ul.list2 li a{
+	color: #49669c;
+	text-decoration: none;
+}
+
+ul.list3{
+	float: left;
+	padding-left: 200px;
+}
+
+ul.list3 li{
+	list-style-image: url("http://www.seaclubaquapark.com/scap/images/arow.png");
+    font-family: "tendernessregular";
+    font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+ul.list3 li a{
+	color: #49669c;
+	text-decoration: none;
+}
+
+.footer-text{
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: center;
+/*	padding-top: 9px; */
+}
+
+div.calendar{float:left; /*width:91px;*/ padding-right:35px; margin-top:10px;}
+
+div.label{ color:white; margin-top:5px;  font-size: 13px; float:left;
+    line-height: 18px; font-family:Arial, Helvetica, sans-serif;}
+	
+	input.text_field{ margin-top:6px; border-radius:4px; width:90px; padding-top:5px; padding-bottom:5px; padding-left:5px;   background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	margin-bottom:10px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; font-size:12px;}
+
+select.select_form{
+  border-radius: 4px;
+    height: 27px;
+    margin-top: 6px;
+    width: 79px;
+	font-size:12px;
+}
+
+select.select_form_hotel{
+  border-radius: 4px;
+    height: 27px;
+    margin-top: 6px;
+    width: 120px;
+	font-size:12px;
+}
+
+div.booknow_main{
+
+ float: left;
+    margin-left: 0;
+    margin-top: 38px;}
+
+
+input.submit_btn{
+  background-color: #51a351;
+    color: #ffffff;
+	font-size:13px; font-family:Arial, Helvetica, sans-serif; border:none; padding-top:6px; padding-bottom:6px; text-align:center; width:105px;}
+	
+	
+h4.BookingTop{
+
+font-family: "MyriadPro-Bold";
+font-size: 21px;
+color: #FFF;
+margin: 0px;
+border-right: 1px dashed #FFF;
+padding: 10px 20px;}
+.reasont .slick-next::before{
+	content: "→" !important;
+}
+
+.reasont .slick-prev::before{
+	content: "←" !important;
+}
+
+.reasont .slick-prev, .dining-bar .slick-next{
+	height: 31px !important;
+	top: 50% !important;
+	width: 33px !important;
+}
+
+.reasont .slick-prev{
+	left: -44px !important;
+}
+
+.reasont .slick-next{
+	right: -44px !important;
+	top:50%!important;
+}
+
+
+.dining-bar .slick-next::before{
+	content: "→" !important;
+}
+
+.dining-bar .slick-prev::before{
+	content: "←" !important;
+}
+
+.dining-bar .slick-prev, .dining-bar .slick-next{
+	height: 31px !important;
+	top: 50% !important;
+	width: 33px !important;
+}
+
+.dining-bar .slick-prev{
+	left: -44px !important;
+}
+
+.dining-bar .slick-next{
+	right: -44px !important;
+}
+
+.reasont .slick-prev, .reasont .slick-next{
+	background: none !important;
+}
+
+.reasont .slick-next::before{
+	content: "→" !important;
+}
+
+.reasont .slick-prev::before{
+	content: "←" !important;
+}
+
+.reasont .slick-prev:hover, .slick-prev:focus, 
+.reasont .slick-next:hover, .slick-next:focus{
+	background: none !important;
+}
+
+.slick-track{
+	width: 4817px !important;
+}
+
+.dining-bar .slick-prev::before, .dining-bar .slick-next::before {font-size:35px!important;z-index:999!important;}
+.dining-bar .slick-prev, .dining-bar .slick-next {top:40%!important;}
+
+a.readmore{
+	text-decoration: none;
+	outline: none;
+}
+
+span.moretext{
+	display: none;
+}
+
+.loading-div{
+	height: 15px;
+    position: fixed;
+    top: 132px;
+    width: 100%;
+    z-index: 99999;}
+	
+.loading-div img{
+	width:100%;
+	height:15px;}	
+	
+.gallery_page{
+	background: rgba(0,0,0,0.8);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+    z-index: 99;
+	display:none;}
+
+.close{
+	color: #fff;
+    font-size: 26px;
+    position: absolute;
+    right: 17%;
+	z-index:9;
+    text-decoration: none;
+    top: 14%;
+	transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    transition: all 500ms ease-in-out 0s;}
+	
+.close:hover{
+	transform: rotateX(190deg);
+    transform-style: preserve-3d;
+    transition: all 500ms ease-in-out 0s;
+	color:#00add5;}
+	
+.slideshow{
+	margin:135px auto 0;
+	width:100%;
+	max-width:960px;}
+	
+.read{
+	color: hsl(215, 11%, 33%);
+    float: left;
+    font-family: arial;
+    font-size: 16px;
+    margin: 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+	width:100%;
+}
+
+.back_to_top{
+	bottom: 10%;
+    position: fixed;
+    right: 5%;
+	display:none;
+    z-index: 9999;}
+
+.back_to_top img{
+	width:80px;}	
+	
+.inner-page-link{
+	border:1px solid hsl(120, 34%, 48%);
+	background-color:hsl(120, 34%, 48%);
+	color:#fff;
+    border-radius: 6px;
+    float: right;
+    font-family: arial;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    right: 16px;
+    text-decoration: none;}
+	
+.room-suites .inner-page-link{
+	bottom:135px;}
+	
+	
+#side-tabs{
+	 list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 220px;;
+    z-index: 9999;
+  width: 60px;
+height: 200px;
+  }
+#side-tabs li.tab-nav{
+    height: 60px;
+    margin-bottom: 10px;
+    width: 60px;
+	position:relative;
+	}
+	
+#side-tabs li.tripadvisor{
+	background: url("http://www.seaclubaquapark.com/scap/images/travel_thumb.png") no-repeat 0 -60px;}
+	
+#side-tabs li.holidaycheck{
+	background: url("http://www.seaclubaquapark.com/scap/images/travel_thumb.png") no-repeat 0 -120px;}
+	
+#side-tabs li.tophotels{
+	background: url("http://www.seaclubaquapark.com/scap/images/travel_thumb.png") no-repeat 0 0px;}
+	
+#side-tabs .inner_tab{
+	width:320px;
+	height:270px;
+	padding:10px 5px;
+	margin-left:60px;
+	top:0;
+	z-index:999;}
+
+#side-tabs li:nth-child(1) .inner_tab{
+	background:rgba(69,124,50,0.7);}
+	
+#side-tabs li:nth-child(2) .inner_tab{
+	background:rgba(49,94,168,0.7);}
+	
+#side-tabs li:nth-child(3) .inner_tab{
+	background:rgba(250,250,250,0.7);}
+	
+#wowslider-container1 .ws_images{
+	max-height: 750px !important;
+}
+
+#wowslider-container1 .ws_images > div > img{
+	max-height: 750px !important;
+}
+	
+#wowslider-container1 .ws_images .ws_list img, 
+#wowslider-container1 .ws_images > div > img{
+	height: 750px !important;
+}
+
+.slider {
+    height: 735px;
+    overflow:hidden;
+    width:100%;
+}
+
+
+.page2 .container2{
+	padding: 64px 0px 0px 0px;
+	margin: 0px auto;
+	width: 900px;
+}
+
+.page2 .container2 h1 {
+display:none;
+}
+#thumbnails ul li img{
+	border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 6px;
+    height: 200px;
+    width: 200px;}
+	
+
+	
+.tab-section{
+	display:none;}
+	
+.default_tab{
+	display:block;}
+	
+	
+.active_tab{
+	display:block;}
+	
+.gcategory{
+	position: absolute;
+    list-style: none;
+    width: 901px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    top: 103px;}
+	
+.gcategory li{
+	float: left;
+    margin-right: 5px;
+    padding: 10px 7px;
+    background-color: #fff;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.gcategory li a{
+	font-size: 16px !important;
+    color: #4A525D;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 0;
+    float: left;}
+	
+.gcategory li.active a{
+	color: #fff;
+	}
+	
+.gcategory li.active{
+	background-color:#01568c;}
+	
+.active{
+	display:block;}
+
+.virtual-tour{
+	position: fixed;
+  right: 200px;
+	z-index: 99999;
+	top: 49px;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+	
+.round-img{
+	width: 261px;
+    height: 261px;
+		border-radius: 15px;
+    border: 3px solid #fff;
+  	margin:0px 40px;
+  }
+
+#newproject  {height:620px;clear:both;}
+#newproject h2 {	margin: 0; color: #FFFFFF; font-size: 82px; text-align: center; font-family: 'tendernessregular'; text-shadow: rgba(0,0,0,1) 2px 2px 5px;padding-top:300px;}
+#newproject .subtitle { color: #FFFFFF; font-family: 'tendernessregular'; font-size: 25px; text-align: center; margin: 20px 0 21px 0;  text-shadow: rgba(0,0,0,1) 2px 2px 2px;}
+#newproject .backdrop {background-size:100% auto; padding-top: 69px;height:570px;}
+
+/*!
+ * jQuery UI Datepicker 1.10.1
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.icon-calendar {
+    background-position: -192px -120px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image:url('http://www.seaclubaquapark.com/images/glyphicons-halflings.png');
+}
+.inpel input {width:80px;}
+.ui-datepicker {z-index:10000!important;}
+.mnpt1, .mnpt2 {float:left;}
+.mnpt1 {width:110px;}
+.mnpt2 {width:110px;}
+.mnpttitle {display:block;color:#fff;font-family: 'tendernessregular'; font-size: 16px; }
+#reservhotel_form {width:930px;margin:40px auto 0px auto;;clear:both;sborder-top:1px dashed #eef;}
+.submit_btn {margin:16px 0px 0px 0px;width:90px;float:right;}
+.ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #aaaaaa; background: #ffffff url(http://www.seaclubaquapark.com/images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x; color: #222222; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header { border: 1px solid #aaaaaa; background: #cccccc url(http://www.seaclubaquapark.com/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x; color: #222222; font-weight: bold; }
+.ui-widget-header a { color: #222222; }
+.ui-state-hover { text-decoration: none; background:none!important;border:0px!important;}
+.ui-state-hover a, .ui-state-hover a:hover { text-decoration: none; background:none!important;border:0px!important;}
+.ui-state-active a, .ui-state-active a:hover { text-decoration: none; background:none!important;border:0px!important;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {border:0px!important;background:none!important;}
+
+.ui-tabs .ui-tabs-nav li {float:none!important;}
+.mail-field {font:normal normal 14pt Helvetica, Arial!important;}
+#tabs-icons.ui-tabs .ui-tabs-nav li a {padding:0px!important;float:none!important;}
